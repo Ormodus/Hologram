@@ -1,0 +1,11 @@
+:root {
+    --text-color: white;
+    --text-background-color: #181e20;
+    --elements-background-color: rgb(13, 16, 17);
+    --input-background-color: #cdcece;
+}
+
+body {
+    background-color: #212529;
+    color: white;
+}

@@ -1,0 +1,11 @@
+:root {
+    --text-color: #0b0b0b;
+    --text-background-color: #e2e2e2;
+    --elements-background-color: #f1f1f1;
+    --input-background-color: #fbfbfb;
+}
+
+body {
+    background-color: rgb(234, 234, 234);
+    color: black;
+}

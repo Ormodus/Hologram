@@ -1,0 +1,248 @@
+:root {
+    --text-color: white;
+    --text-background-color: #181e20;
+    --elements-background-color: rgb(13, 16, 17);
+    --input-background-color: #cdcece;
+}
+
+.out-container {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    overflow-y: auto;
+    max-height: 100%;
+    top: 0;
+    box-sizing: border-box;
+}
+
+.out {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    background-color: var(--text-background-color);
+    font-family: "Lato";
+    text-align: left;
+    padding: 2%;
+    margin-bottom: 5px;
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+
+.out:nth-child(1) {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.out:nth-child(odd) {
+    text-align: left;
+}
+
+.out:nth-child(even) {
+    text-align: right;
+    background-color: inherit;
+}
+
+.avatar {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    height: 90%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    border-radius: 3%;
+    box-shadow: 4px 4px 4px rgba(42, 42, 42, 0.2);
+    overflow: hidden;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.crank {
+    font-size: 240%; 
+    color: white;
+}
+
+.chat {
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    height: 90%;
+    background-color: var(--elements-background-color);
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    border-radius: 3%;
+    box-shadow: 4px 4px 4px rgba(42, 42, 42, 0.2);
+}
+
+.toolkit {
+    display: inline-block;
+    width: 3%;
+    height: 13%;
+    background-color: var(--elements-background-color);
+    margin-left: 1%;
+    margin-bottom: 2%;
+    border-radius: 10%;
+    box-shadow: 4px 4px 4px rgba(42, 42, 42, 0.2);
+}
+
+.text {
+    display: grid;
+    grid-template-columns: 0.5fr 8fr 0.5fr;
+    position: absolute;
+    bottom: 3%;
+    width: 94%;
+    background-color: var(--input-background-color);
+    margin-left: 3%;
+    margin-right: 3%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.text-input {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    border-left: solid #757576 1px;
+    background-color: var(--input-background-color);
+    padding: 1%;
+}
+
+
+.text-input:active:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.mic-wrapper {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.mic {
+    display: flex;
+    align-items: center;
+    color: #363737;
+    font-size: 200%;
+    cursor: pointer;
+    transform: scale(0.7);
+}
+
+.send {
+    display: flex;
+    align-items: center;
+    font-size: 250%;
+    cursor: pointer;
+    color: #363737;
+    position: absolute;
+    bottom: 10%;
+    transform: translate(0,-15%);
+}
+
+.icon {
+    stroke: unset;
+    stroke-width: 0px;
+    fill: currentColor;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+}
+
+.material-symbols-outlined {
+    display:table;
+    float: right;
+    margin-right: 5%;
+    margin-top: 5%;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.dropdown-menu {
+    background-color: #161E20;
+    color: #F9F4F4;
+}
+
+body {
+    background-color: #212529;
+    color: #fff;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100vh;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+}
+
+#video-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Dark and Light mode */
+.toggle {
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
+}
+
+.settings {
+    display: flex;
+    margin-left: 12%;
+    float: left;
+    color: white;
+}
+
+.settings:hover {
+    color: yellow;
+}
+
+.tools {
+    display: flex;
+    margin-left: 10%;
+    float: left;
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.nav-dropdown {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
